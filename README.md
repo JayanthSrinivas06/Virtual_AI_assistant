@@ -90,3 +90,8 @@ This project is free to use, modify, and distribute without restrictions.
 
 ## 🌐 Links  
 - **Project Repository:** [GitHub Link](https://github.com/JayanthSrinivas06/Virtual_AI_assistant)
+
+---
+
+## ⚠️ Note  
+This is a **limited task prototype** of NEILS. Improved versions with **new features and advanced NLP capabilities** are under development! 🚀
