@@ -59,8 +59,11 @@ NIELS is an AI-powered virtual assistant named after **Niels Bohr**. This protot
 ## 📸 Screenshots
 
 Here’s a preview of the assistant in action: 
-![Home page](screenshots/Home.png)
-![voice interface](screenshots/Voice.png)
+
+Home Page:
+![Home page](Screenshots/Home.png)
+Voice command Interface: 
+![Voice interface](Screenshots/Voice.png)
 ---
 
 ## 🖥️ Tech Stack  
@@ -76,17 +79,15 @@ Here’s a preview of the assistant in action:
 |------------|---------------|
 | Jayanth Srinivas Bommisetty  | [JayanthSrinivas06](https://github.com/JayanthSrinivas06) |
 | Sarvan Dattu Perumalla | [Sarvan05](https://github.com/Sarvan05) |
-| Kesava Parepalli | [KesavaParepalli]([https://github.com/Sarvan05](https://github.com/KesavaParepalli)) |
+| Kesava Parepalli | [KesavaParepalli](https://github.com/KesavaParepalli) |
 | Aryan Puri | [Aryan-Puri-23](https://github.com/Aryan-Puri-23) |
 
 ---
 
 ## 📝 License  
-This project is licensed under the **MIT License** – feel free to use, modify, and distribute it.  
+This project is free to use, modify, and distribute without restrictions.  
 
 ---
 
 ## 🌐 Links  
-- **Project Repository:** [GitHub Link](https://github.com/your-username/your-repo)  
-- **Documentation:** [Docs Link](#)  
-- **Live Demo (if available):** [Demo Link](#)  
+- **Project Repository:** [GitHub Link](https://github.com/JayanthSrinivas06/Virtual_AI_assistant)
