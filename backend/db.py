@@ -4,6 +4,10 @@ import sqlite3
 connection = sqlite3.connect("niels.db")
 cursor = connection.cursor()
 
+'''Once you run the code to create the table, comment out
+   Remove the comments to use these snippets and avoid running repeatedly.
+'''
+
 # query = "CREATE TABLE IF NOT EXISTS sys_command(ID integer primary key, name VARCHAR(100), path VARCHAR(1000))"
 # cursor.execute(query)
 
