@@ -21,8 +21,7 @@ NIELS is an AI-powered virtual assistant named after **Niels Bohr**. This protot
  ┓ 📂 notifs/        # Notifications-related functions  
  ┓ 📝 chat.html      # Chat interface  
  ┓ 📝 main.py        # Core functionality  
- ┓ 📝 run.py         # Execution script  
- ┓ 📝 hotword.ppn    # Hotword detection file 
+ ┓ 📝 run.py         # Execution script
 ```
 
 ---
