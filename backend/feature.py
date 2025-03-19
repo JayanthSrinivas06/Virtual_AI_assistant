@@ -24,7 +24,7 @@ def playAssistantSound(file):
 
 def openCommand(query):
     from backend.commands import speak
-    con = sqlite3.connect("neils.db")
+    con = sqlite3.connect("niels.db")
     cursor = con.cursor()
     query = query.replace(ASSISTANT_NAME, "").replace("open", "").strip().lower()
     print(f"App name extracted: {query}")
@@ -69,9 +69,14 @@ def hotword():
     audio_stream = None
 
     try:
+        ''' Get the Access key for the Suitable hotword you choose from (https://picovoice.ai/platform/porcupine/)
+        1> Sign in to the website and create a hotword
+        2> Download the .ppn file into the project folder
+        3> Copy the Access key displayed in the screen
+        '''
         porcupine = pvporcupine.create(
-            access_key="ytBT4PlBCVhh+Yi6l1Z4H11k7n2lPMMGiIHbQpbd2Y91llDjyZVapw==",
-            keyword_paths=["Hey-buddy_en_windows_v3_0_0.ppn"]
+            access_key="YOUR_ACCESS_KEY",
+            keyword_paths=["YOUR_HOTWORD_FILE_IN_PPN_FORMAT_PATH"] # Save the ppn document in the project folder and provide its path
         )
 
         paud = pyaudio.PyAudio()
@@ -113,7 +118,7 @@ def hotword():
 
 
 def get_weather(city):
-    API_KEY = "44ae582b54a5057d73f81d18af12f6eb"
+    API_KEY = "YOUR_API_KEY"    # Get api key form (https://openweathermap.org/)
     URL = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
 
     try:
@@ -196,10 +201,10 @@ from backend.commands import speak
 
 def ChatBot(query):
     API_URL = "https://api.cohere.ai/v1/generate"
-    API_KEY = "IhIiFGzlVXolcXAN83XO5lMgNPrQwJwGsTeqnQnf"
+    API_KEY = "YOUR_API_KEY"    # Get API key form Cohere
 
     system_prompt = (
-        "You are NEILS, an AI virtual assistant. "
+        "You are NIELS, an AI virtual assistant. "
         "Be helpful, polite, and friendly. "
         "Answer only for what i ask, Give response in one line."
     )
