@@ -82,11 +82,6 @@ Voice command Interface:
 
 ---
 
-## 📝 License  
-This project is free to use, modify, and distribute without restrictions.  
-
----
-
 ## 🌐 Links  
 - **Project Repository:** [GitHub Link](https://github.com/JayanthSrinivas06/Virtual_AI_assistant)
 
