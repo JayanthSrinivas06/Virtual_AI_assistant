@@ -1,0 +1,590 @@
+/* General Body Styles */
+body {
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Square Animation Section */
+#neilsHood .square {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#neilsHood .square h3 {
+    font-size: 25px;
+}
+
+#neilsHood .square span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 48%, #000dff3b 47%);
+    box-shadow: 0 0 30px rgb(25, 0, 255), inset 0 0 30px rgb(25, 0, 255);
+    border-radius: 38% 62% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+}
+
+#neilsHood .square span:nth-child(1) {
+    animation: animate1 6s linear infinite;
+}
+
+#neilsHood .square span:nth-child(2) {
+    animation: animate2 4s linear infinite;
+}
+
+#neilsHood .square span:nth-child(3) {
+    animation: animate3 8s linear infinite;
+}
+
+/* Keyframe Animations */
+@keyframes animate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#TextInput {
+    background-color: #181818a8;
+    border-color: blue;
+    border-radius: 8px;
+    color: white;
+    padding: 3px 0px 3px 20px;
+    margin: 0px 20%;
+    box-shadow: #002bff 0px 0px 10px;
+}
+
+.input-field {
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    outline: none;
+    color: white;
+    font-family: cursive;
+}
+
+
+.glow-on-hover {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #181818a8
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.chat-canvas {
+    background-color: #191919
+}
+
+
+/* Chat Box Styling */
+#neilsHood .userInput {
+    position: fixed;
+    bottom: 5%;
+    left: 28%;
+    margin: 15px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar Styles */
+#toggleButton {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    padding: 10px;
+    z-index: 1000;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#toggleButton img {
+    width: 30px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(58, 57, 57, 0.5);
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in;
+    z-index: 3;
+}
+
+#sidebar #header {
+    display: flex;
+    padding: 10px;
+    margin-top: 45px;
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li {
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#sidebar li button {
+    background-color: black;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(250, 248, 248, 0.2);
+    transition: all 0.3s ease;
+}
+
+#sidebar button:hover {
+    background-color: #444;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    transform: translateX(5px);
+}
+
+#sidebar button:focus {
+    outline: none;
+    border: 2px solid #fff;
+}
+
+#closeButton {
+    background-color: transparent;
+    margin-left: 120px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 2px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#closeButton:hover {
+    color: #007acc;
+    transform: scale(1.1);
+}
+
+#closeButton:active {
+    transform: scale(1);
+    color: #0056b3;
+}
+
+
+/*for Voice*/
+#Soul .square {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#Soul .square h3 {
+    font-size: 25px;
+}
+
+#Soul .square span {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 300px;
+    height: 300px;
+    border: none;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+#Soul .square span:nth-child(1) {
+    border-radius: 38% 62% 37% / 41% 44% 56%;
+    background-image: linear-gradient(#ffffff00 20%, #ffffff17 80%);
+    box-shadow: 10px 0 40px rgb(25, 0, 255), inset 10px 0 50px rgb(61, 223, 196);
+    animation: animate4 1s linear infinite;
+}
+
+#Soul .square span:nth-child(2) {
+    border-radius: 38% 62% 37% / 41% 44% 56%;
+    background-image: linear-gradient(#ffffff00 20%, #ffffff17 100%);
+    box-shadow: 10px 0 50px rgb(240, 175, 78), inset 10px 0 40px rgb(243, 143, 238);
+    animation: animate5 2s linear infinite;
+}
+
+#Soul .square span:nth-child(3) {
+    border-radius: 38% 62% 37% / 41% 44% 56%;
+    background-image: linear-gradient(#ffffff00 20%, #ffffff17 100%);
+    box-shadow: 10px 0 40px rgb(226, 72, 149), inset 10px 0 50px rgb(180, 199, 109);
+    animation: animate6 3s linear infinite;
+}
+
+/* Keyframe Animations */
+@keyframes animate4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes animate6 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#Soul .voiceMessage {
+    margin-right: 75px;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+
+#Soul .voiceMessage.animated {
+    animation: fadeInOutUp 10s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOutUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+
+#backBtn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 0px;
+    top: 50px;
+    left: 0;
+}
+
+#backBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #002bff, #7a00ff, #ff00c8, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #ff0000);
+    position: absolute;
+    top: -0;
+    left: -0;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: btn-glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#backBtn:active {
+    color: #181818a8
+}
+
+#backBtn:active:after {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+}
+
+#backBtn:hover:before {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    opacity: 1;
+}
+
+#backBtn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff6b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes btn-glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.chat-container {
+    width: 80%;
+    height: 90%;
+    overflow-y: auto;
+    border-radius: 15px;
+    background-color: #8fc6f48c;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #63aeff;
+    color: white;
+    text-align: right;
+}
+
+.bot {
+    align-self: flex-start;
+    background-color: #e5e5ea;
+    color: black;
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+#ChatbackBtn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#ChatbackBtn:hover {
+    background: linear-gradient(to left, rgb(91, 86, 245), rgb(123, 171, 255),  rgb(123, 255, 200), rgb(86, 245, 86));
+    animation: shadowExpand 2s ease-out infinite;
+    transform: scale(1.1);
+}
+
+@keyframes shadowExpand {
+    0% {
+        box-shadow: 0px 0px 10px rgba(86, 170, 245);
+    }
+
+    25% {
+        box-shadow: 0px 0px 15px rgb(86, 245, 224);
+    }
+
+    40% {
+        box-shadow: 0px 0px 25px rgb(86, 245, 147);
+    }
+
+    65% {
+        box-shadow: 0px 0px 40px rgb(240, 245, 86);
+    }
+
+    100% {
+        box-shadow: 0px 0px 100px rgb(245, 192, 86);
+    }
+}
+
+#ChatbackBtn:active {
+    transform: scale(0.9);
+}

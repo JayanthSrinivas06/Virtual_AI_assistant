@@ -1,0 +1,98 @@
+[
+    {
+        "user": "hello",
+        "bot": "Hello! My name is Neils, and I'm here to help in any way I can while being helpful, polite, and friendly."
+    },
+    {
+        "user": "who is the present prime minister of india",
+        "bot": "The current prime minister of India is Narendra Modi."
+    },
+    {
+        "user": "what is the meaning of Argha",
+        "bot": "Argh is an expression of frustration or anger typically associated with grief or pain."
+    },
+    {
+        "user": "What is the meaning if \"Argha\"",
+        "bot": "Argha is the Sanskrit word for \" Offering to a deity at the time of worship \". It is also the word for \"Respect\" in Indian languages like Hindi."
+    },
+    {
+        "user": "explain 2+2",
+        "bot": "Of course! The expression 2 + 2 is a basic arithmetic operation in addition. When you have two ones (2) and you add two more ones (2), you get a total of four ones. Therefore, 2 + 2 equals 4. I hope this explanation was helpful! Is there anything else you would like to know?"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm glad you reached out. How can I assist you today?"
+    },
+    {
+        "user": "what is your name",
+        "bot": "Hello! I'm Neils, an AI virtual assistant and a prototype designed for higher-end devices. It's nice to meet you. If you have any questions or need assistance with something, feel free to ask. I'm here to help."
+    },
+    {
+        "user": "explain 2+2",
+        "bot": "Of course, I'd be happy to help! The expression \"2 + 2\" involves adding two numbers together. Specifically, it means taking the quantity of two and combining it with the quantity of two."
+    },
+    {
+        "user": "what is meant by name \"Jayanth\"?",
+        "bot": "The name \"Jayanth\" is of Sanskrit origin and is commonly used in India. It is a unisex name, but it is more commonly given to males. \"Jayanth\" is derived from the Sanskrit words \"jaya\" meaning \"victory\" or \"conquer\" and \"ant\" meaning \"end\" or \"limit.\" Therefore, \"Jayanth\" can be interpreted as \"one who has conquered the end\" or \"one who"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm glad you reached out. How can I help you today?"
+    },
+    {
+        "user": "What is your name",
+        "bot": "Hello! I'm Neils, an AI virtual assistant designed for higher-end devices. I'm here to help you. It's nice to meet you!"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm glad you reached out. How can I assist you today?"
+    },
+    {
+        "user": "voice access camera hello",
+        "bot": "I'm unable to access a camera unless it is a browser camera component but this assistant is ready to assist you with responsive queries, remember to pose your questions succinctly for effective answers."
+    },
+    {
+        "user": "windows automatic hello",
+        "bot": "I don't think Windows has an \"Automatic Hello\" feature. Would you like me to tell you about Windows Hello, or about other features that might better recognize users for a more seamless experience?"
+    },
+    {
+        "user": "who is cm of Andhra pradesh?",
+        "bot": "The Chief Minister of Andhra Pradesh is Y.S. Jagan Mohan Reddy as of my knowledge up to October 2021. He took office on May 30, 2019. Please verify from a reliable source as this information might have changed."
+    },
+    {
+        "user": "hello",
+        "bot": "Hi there! How can I assist you today? Please ask away, and I'll do my best to be helpful and thorough in my responses."
+    },
+    {
+        "user": "What is the capital of India?",
+        "bot": "The capital of India is New Delhi. Is there anything else you would like to know? I'm here to help!"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm glad you reached out. How can I assist you today?"
+    },
+    {
+        "user": "hello",
+        "bot": "Hello! I'm glad you reached out. How can I assist you today?"
+    },
+    {
+        "user": "message to amma",
+        "bot": "Hi Amma! I am Neil, an AI-assistant chatbot trained to help users by providing fact-based responses. I am designed to be helpful, polite, and friendly to users like you. Feel free to ask me any questions or seek assistance on a wide array of topics, and I'll do my best to help you out."
+    },
+    {
+        "user": "who are you",
+        "bot": "Hello! I'm NEILS, an AI virtual assistant and a prototype designed for higher-end devices. I'm here to help answer your questions, provide information, and assist you with various tasks in a helpful, polite, and friendly manner. How can I assist you today?"
+    },
+    {
+        "user": "Who is the owner of Asus?",
+        "bot": "The owner of ASUS is a Taiwanese technology company named ASUSTeK Computer Inc. It was founded in 1989 by four engineers: T.H. Tung, Ted Hsu, Wayne Hsieh, and M.T. Liao. They initially started the company as a motherboard manufacturer and have since expanded to produce a wide range of technology products including laptops, desktops, mobile phones, and more."
+    },
+    {
+        "user": "What is the latest update form asus?",
+        "bot": "As of my knowledge up to October 2021, the latest updates from ASUS include:"
+    },
+    {
+        "user": "Who is the Chief minister of Andhra pradesh?",
+        "bot": "The current Chief Minister of Andhra Pradesh is Y. S. Jaganmohan Reddy, as of my knowledge up to 2021. He took office on May 30, 2019."
+    }
+]
