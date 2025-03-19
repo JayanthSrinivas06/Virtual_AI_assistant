@@ -1,32 +1,32 @@
 import csv
 import sqlite3
 
-connection = sqlite3.connect("neils.db")
+connection = sqlite3.connect("niels.db")
 cursor = connection.cursor()
 
 # query = "CREATE TABLE IF NOT EXISTS sys_command(ID integer primary key, name VARCHAR(100), path VARCHAR(1000))"
 # cursor.execute(query)
 
-# query = "insert INTO sys_command VALUES (null, 'pictures', 'C:\\Users\\B_Jayanth\\OneDrive\\Pictures')"
+# query = "insert INTO sys_command VALUES (null, 'Folder or File or App Name', 'File path')"
 # cursor.execute(query)
 # connection.commit()
 
-# query = "DELETE FROM sys_command WHERE name = 'vs code'"
+# query = "DELETE FROM sys_command WHERE name = 'App Name'"
 # cursor.execute(query)
 # connection.commit()
 
 # query = "CREATE TABLE IF NOT EXISTS web_command(ID integer primary key, name VARCHAR(100), url VARCHAR(1000))"
 # cursor.execute(query)
 
-# query = "insert INTO web_command VALUES (null,'gmail', 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox')"
+# query = "insert INTO web_command VALUES (null,'Website Name', 'Website URL')"
 # cursor.execute(query)
 # connection.commit()
 
 # cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, name VARCHAR(200), mobile_no VARCHAR(255), email VARCHAR(255) NULL)''')
 
-query = "INSERT INTO contacts VALUES (null,'mama', '99856 00182', 'null')"
-cursor.execute(query)
-connection.commit()
+# query = "INSERT INTO contacts VALUES (null,'Name', 'Phone number', 'null')"
+# cursor.execute(query)
+# connection.commit()
 
 # desired_columns_indices = [0, 18]
 
