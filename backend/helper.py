@@ -41,7 +41,7 @@ def Chatting(query):
     import requests
 
     API_URL = "https://api.groq.com/openai/v1/chat/completions"
-    API_KEY = "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"
+    API_KEY = "YOUR_API_KEY"    # Get API key form Groq
 
     identity_questions = [
         "what is your name", "what's your name", "who are you", "what do they call you",
@@ -57,7 +57,7 @@ def Chatting(query):
 
     if query.lower() in identity_questions:
         system_prompt = (
-        "Your name is NEILS, an AI virtual assistant and a prototype version designed for higher-end devices. "
+        "Your name is NIELS, an AI virtual assistant and a prototype version designed for higher-end devices. "
         "Be helpful, polite, and friendly. "
         "Answer only for what I ask."
         )
